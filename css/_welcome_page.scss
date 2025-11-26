@@ -22,6 +22,7 @@ body.welcome-page {
         background-color: #131519;
         overflow: hidden;
         position: relative;
+        min-height: 100vh;
 
         .header-container {
             display: $welcomePageHeaderContainerDisplay;
@@ -177,10 +178,13 @@ body.welcome-page {
         text-align: left;
         display: $welcomePageTabContainerDisplay;
         flex-direction: column;
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
 
         .tab-content{
             display: $welcomePageTabContentDisplay;
-            height: 250px;
+            height: 200px;
             margin: 5px 0px;
             overflow: hidden;
             flex-grow: 1;
@@ -238,20 +242,21 @@ body.welcome-page {
         background: rgba(255, 255, 255, 0.38);
         border-radius: 3px;
         color: $welcomePageDescriptionColor;
-        padding: 4px;
+        padding: 8px;
         position: absolute;
-        top: calc(35px - #{$welcomePageHeaderContainerMarginTop});
-        right: 0;
+        top: 24px;
+        right: 24px;
         z-index: $zindex2;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 
         * {
             cursor: pointer;
-            font-size: 2rem;
+            font-size: 2.25rem;
         }
 
         .toolbox-icon {
-            height: 24px;
-            width: 24px;
+            height: 32px;
+            width: 32px;
         }
     }
 
@@ -261,8 +266,12 @@ body.welcome-page {
         height: 100%;
 
         .watermark.leftwatermark {
-            width: $welcomePageWatermarkWidth;
-            height: $welcomePageWatermarkHeight;
+            width: 160px;
+            height: 64px;
+            left: 24px;
+            top: 24px;
+            max-width: none;
+            max-height: none;
         }
     }
 

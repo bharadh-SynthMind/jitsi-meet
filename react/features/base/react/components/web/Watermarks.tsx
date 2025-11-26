@@ -11,6 +11,8 @@ import { translate } from '../../../i18n/functions';
  *
  * @private
  */
+const VEDIROBOTICS_URL = 'https://vedirobotics.com';
+
 const _RIGHT_WATERMARK_STYLE = {
     backgroundImage: 'url(images/rightwatermark.png)'
 };
@@ -201,9 +203,9 @@ class Watermarks extends Component<IProps, State> {
             return (
                 <a
                     className = 'poweredby'
-                    href = 'http://jitsi.org'
+                    href = 'http://vedirobotics.com'
                     target = '_new'>
-                    <span>{ t('poweredby') } jitsi.org</span>
+                    <span>{ t('poweredby') } vedirobotics.com</span>
                 </a>
             );
         }
@@ -256,7 +258,7 @@ function _mapStateToProps(state: IReduxState, ownProps: any) {
     }
 
     return {
-        _logoLink,
+        _logoLink: VEDIROBOTICS_URL,
         _logoUrl,
         _showJitsiWatermark
     };

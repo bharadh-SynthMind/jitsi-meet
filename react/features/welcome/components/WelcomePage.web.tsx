@@ -11,9 +11,10 @@ import CalendarList from '../../calendar-sync/components/CalendarList.web';
 import RecentList from '../../recent-list/components/RecentList.web';
 import SettingsButton from '../../settings/components/web/SettingsButton';
 import { SETTINGS_TABS } from '../../settings/constants';
-
 import { AbstractWelcomePage, IProps, _mapStateToProps } from './AbstractWelcomePage';
 import Tabs from './Tabs';
+
+declare const interfaceConfig: any;
 
 /**
  * The pattern used to validate room name.
@@ -225,7 +226,7 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
                             {t('welcomepage.headerTitle')}
                         </h1>
                         <span className = 'header-text-subtitle'>
-                            {t('welcomepage.headerSubtitle')}
+                            {t('Innovating Neuro Health Through Virtual care')}
                         </span>
                         <div id = 'enter_room'>
                             <div className = 'join-meeting-container'>

@@ -22,6 +22,8 @@ import {
 } from './configType';
 import { _cleanupConfig, _setDeeplinkingDefaults } from './functions';
 
+declare const interfaceConfig: any;
+
 /**
  * The initial state of the feature base/config when executing in a
  * non-React Native environment. The mandatory configuration to be passed to
@@ -455,7 +457,7 @@ function _translateLegacyConfig(oldValue: IConfig) {
     }
 
     newValue.defaultRemoteDisplayName
-        = newValue.defaultRemoteDisplayName || 'Fellow Jitster';
+        = newValue.defaultRemoteDisplayName || 'Fellow VediRobotics Guest';
 
     newValue.transcription = newValue.transcription || {};
     if (oldValue.transcribingEnabled !== undefined) {

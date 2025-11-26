@@ -7,12 +7,12 @@
         "lib": [ "ES2020", "ES2024.Promise" ],
         "types": [ "react-native" ],
         "skipLibCheck": true,
-        "moduleResolution": "Node",
+        "moduleResolution": "node",
         "strict": true,
         "noImplicitAny": true,
         "strictPropertyInitialization": false,
         "resolveJsonModule": true,
-        "moduleSuffixes": [".native", ".ios", ".android", ""]
+        "moduleSuffixes": [".native", ".ios", ".android", ".any", ""]
     },
     "exclude": [
         "node_modules",

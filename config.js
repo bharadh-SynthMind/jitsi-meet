@@ -25,6 +25,7 @@ if (subdomain.startsWith('<!--')) {
 var enableJaaS = false;
 
 var config = {
+    appName: 'VediRobotics Meet',
     // Connection
     //
 
@@ -758,7 +759,7 @@ var config = {
     // defaultLocalDisplayName: 'me',
 
     // Default remote name to be displayed
-    // defaultRemoteDisplayName: 'Fellow Jitster',
+    defaultRemoteDisplayName: 'Fellow VediRobotics Guest',
 
     // Hides the display name from the participant thumbnail
     // hideDisplayName: false,

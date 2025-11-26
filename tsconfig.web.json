@@ -7,13 +7,13 @@
         "jsx": "react",
         "lib": [ "ES2024", "DOM" ],
         "skipLibCheck": true,
-        "moduleResolution": "Node",
+        "moduleResolution": "node",
         "strict": true,
         "noImplicitAny": true,
         "noImplicitOverride": true,
         "strictPropertyInitialization": false,
         "resolveJsonModule": true,
-        "moduleSuffixes": [".web", ""]
+        "moduleSuffixes": [".web", ".any", ""]
     },
     "exclude": [
         "node_modules",
